@@ -15,48 +15,48 @@ namespace E_Commerce
     {
 
         /// <summary>
-        /// carType control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList carType;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// carBrand control.
+        /// email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList carBrand;
+        protected global::System.Web.UI.WebControls.TextBox email;
 
         /// <summary>
-        /// carModel control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList carModel;
+        protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// rating control.
+        /// password control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox rating;
+        protected global::System.Web.UI.WebControls.TextBox password;
 
         /// <summary>
-        /// SurveyBtn control.
+        /// LoginBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SurveyBtn;
+        protected global::System.Web.UI.WebControls.Button LoginBtn;
     }
 }

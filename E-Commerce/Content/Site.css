@@ -19,7 +19,7 @@ body {
 input,
 select,
 textarea {
-    max-width: 280px;
+    max-width: inherit;
 }
 
 /*fixed navbar
@@ -28,6 +28,13 @@ textarea {
     position: sticky;
 }
 */
+
+/**subtitute container class*/
+.sectioner {
+    width: initial;
+    padding: 20px;
+}
+
 /*sets the fixed sidebar for the search*/
 .sidebar {
     height: 500px;
@@ -102,6 +109,10 @@ textarea {
     .body-content {
         padding: 0;
     }
+    .aspform {
+        padding-left: 120px;
+        padding-right: 100px;
+    }
 
     .sidebar {
         padding-top: 10px;
@@ -114,6 +125,10 @@ textarea {
     .sidebar{
         padding-top: 10px;
         position: sticky;
+    }
+
+    .sectioner {
+        padding: 10px;
     }
 
     .sticky-offset{

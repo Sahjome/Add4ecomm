@@ -17,14 +17,9 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
     <style type="text/css">
-        .sectioner{
-            padding-top:38px;
-            margin: 0px 30px 30px 20px;
-        }
+        
         .topper{
-            background-color:inherit;
-            color: #9d9d9d;
-            text-anchor:middle;
+           width: 650px;
         }
        
         .auto-style1 {
@@ -93,51 +88,51 @@
         <%-- Navbar End --%>
               <%-- Main Body Begin --%>
               <div class="row">
-                  <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="col-auto col-md-4 col-sm-4">
                         <div class="navbar-header">
                             <button type="button" style="background-color:red;" class="navbar-toggle" data-toggle="collapse" data-target="#search">
                                         <span class="icon-search"></span>Search
                             </button>
                         </div>
                      <%-- Sidebar Begin --%>
-        <div class="sidebar" id="search">
-            <h3><center>Search for cars</center></h3>
-            <br />
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="form-group">
-                    <label class="control-label float-left">Car Type: </label>
-                    <select name="carType" class="form-control" required>
-                        <option disabled selected value="">---Select---</option>
-                        <%-- loop through car types --%>
-                        <option>Announcement</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="form-group">
-                    <label class="control-label float-left">Car Brand: </label>
-                    <select class="form-control" name="carBrand" required>
-                        <option disabled selected value="">--Select--</option>
-                        <%-- loop through the car brands in the db --%>
-                    </select>
-                </div>
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="form-group">
-                    <label class="control-label float-left">Car Model: </label>
-                    <select class="form-control" name="carModel" required>
-                        <option disabled selected value="">--Select--</option>
-                        <%-- loop through the car brands in the db --%>
-                    </select>
-                </div>
-            </div>
-            <div class="text-center">
-            <button class="btn btn-secondary" style="background-color:#9d9d9d;" type="submit">Search</button>
-            </div>
-        </div>
+                    <div class="sidebar" id="search">
+                        <h3 class="text-center">Search for cars</h3>
+                        <br />
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label float-left">Car Type: </label>
+                                <select name="carType" class="form-control" required>
+                                    <option disabled selected value="">---Select---</option>
+                                    <%-- loop through car types --%>
+                                    <option>Announcement</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label float-left">Car Brand: </label>
+                                <select class="form-control" name="carBrand" required>
+                                    <option disabled selected value="">--Select--</option>
+                                    <%-- loop through the car brands in the db --%>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label float-left">Car Model: </label>
+                                <select class="form-control" name="carModel" required>
+                                    <option disabled selected value="">--Select--</option>
+                                    <%-- loop through the car brands in the db --%>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                        <button class="btn btn-secondary" style="background-color:#9d9d9d;" type="submit">Search</button>
+                        </div>
+                    </div>
             <%-- Sidebar End --%>
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-8" >
+                <div class="col-auto col-md-8 col-sm-8" >
                     <asp:ContentPlaceHolder ID="MainContent" runat="server">
                     </asp:ContentPlaceHolder>
                 </div>
