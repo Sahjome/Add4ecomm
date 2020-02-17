@@ -8,29 +8,29 @@
     </p>
     <br />
     <h6 class="text-center">CONTACT FORM</h6>
-    <div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="form-group">
-            <asp:Label ID="Label1" runat="server" Text="Name:" CssClass="control-label"></asp:Label>
-            <asp:TextBox ID="name" CssClass="form-control" runat="server"></asp:TextBox>
-        </div>
-    </div>
-    <div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="form-group">
-            <asp:Label ID="Label2" runat="server" Text="Email:" CssClass="control-label"></asp:Label>
-            <asp:TextBox ID="email" CssClass="form-control" runat="server"></asp:TextBox>
-        </div>
-    </div>
-    <div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="form-group">
-            <asp:Label ID="Label3" runat="server" Text="Message:" CssClass="control-label"></asp:Label>
-            <asp:TextBox ID="message" cols="2" CssClass="form-control" runat="server" Height="105px" Rows="6" MaxLength="50" TextMode="MultiLine"></asp:TextBox>
-        </div>
-        <div class="form-group">
-            <div class="text-center col-lg-4">
-                <asp:Button ID="contactBtn" CssClass="btn btn-secondary"  style="background-color:#9d9d9d;" runat="server" Text="Send" />
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="form-group">
+                    <asp:Label ID="Label1" runat="server" Text="Name:" CssClass="control-label"></asp:Label>
+                    <asp:TextBox ID="name" CssClass="form-control" runat="server"></asp:TextBox>
+                </div>
             </div>
-        </div>
-    </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="form-group">
+                    <asp:Label ID="Label2" runat="server" Text="Email:" CssClass="control-label"></asp:Label>
+                    <asp:TextBox ID="email" CssClass="form-control" runat="server"></asp:TextBox>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="form-group">
+                    <asp:Label ID="Label3" runat="server" Text="Message:" CssClass="control-label"></asp:Label>
+                    <asp:TextBox ID="message" cols="2" CssClass="form-control" runat="server" Height="105px" Rows="6" MaxLength="50" TextMode="MultiLine"></asp:TextBox>
+                </div>
+                <div class="form-group">
+                    <div class="text-center col-lg-4">
+                        <asp:Button ID="contactBtn" CssClass="btn btn-secondary"  style="background-color:#9d9d9d;" runat="server" Text="Send" />
+                    </div>
+                </div>
+            </div>
     <address>
         One Microsoft Way<br />
         Redmond, WA 98052-6399<br />

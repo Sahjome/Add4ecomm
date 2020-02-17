@@ -36,12 +36,18 @@
                         <asp:DropDownList ID="carModel" CssClass="form-control" runat="server"></asp:DropDownList>
                     </div>
                     <div class="form-group">
-                        <label class="control-label">Please give a rating over 10:</label>
-                        <asp:TextBox ID="rating" runat="server" CssClass="form-control" TextMode="Number" MaxLength:10></asp:TextBox>
+                        <div class="col">
+                            <label class="control-label">Please give a rating over 10:</label>
+                        </div>
+                        <div class="col">
+                            <asp:TextBox ID="rating" runat="server" CssClass="custom-range" TextMode="Range" min="1" step="0.5" max=10></asp:TextBox>
+                        </div>
                     </div>
-                </div>
-                <div class="text-center">
-                    <button class="btn btn-secondary" style="background-color:#9d9d9d;" type="submit">Search</button>
+                    <div class="form-group mb-3">
+                        <div class="text-center col-lg-3">
+                            <asp:Button ID="contactBtn" CssClass="btn btn-secondary"  style="background-color:#9d9d9d;" runat="server" Text="Send" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </fieldset>
