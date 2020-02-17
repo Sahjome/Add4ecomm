@@ -11,25 +11,34 @@ namespace E_Commerce
 {
 
 
-    public partial class SiteMaster
+    public partial class Forgot
     {
 
         /// <summary>
-        /// dropd control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor dropd;
+        protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// MainContent control.
+        /// password control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.TextBox password;
+
+        /// <summary>
+        /// ForgotPasswordBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ForgotPasswordBtn;
     }
 }

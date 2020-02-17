@@ -58,11 +58,13 @@
               <%-- Navbar Begin --%>
                 <div class="navbar navbar-inverse">
                     <div class="container">
+
                         <div class="row">
                             <div class="col-lg-6 col-sm-12" style="color:#9d9d9d; padding-left:30px; padding-top:10px;">Shopping</div>
                             <div class="col-lg-6 col-sm-12" style="color:#9d9d9d; padding-right:30px; padding-top:10px; text-align:end;">Phone: +44 718945</div>
                          </div>
                         <hr />
+                        
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                 <span class="icon-bar"></span>
@@ -78,26 +80,48 @@
                                 <li><a runat="server" style="line-height:4px" href="~/About">About</a></li>
                                 <li><a runat="server" style="line-height:4px" href="~/Contact">Contact</a></li>
                             </ul>
+
+                            <%-- Without Session Begin --%>
                             <ul class="nav navbar-nav navbar-right">
                               <li><a runat="server" class="myButton" style="line-height:4px" href="~/Login">Login</a></li>
                               <li><a runat="server" class="myButton" style="line-height:4px" href="~/Register">Register</a></li>
                             </ul>
-                          </div>
+                            <%-- Without Session End --%>
+
+                            <%-- With Session Begin --%>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="nav-item dropdown"><a runat="server" style="line-height:4px" href="/" id="dropd"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
+                                    <ul class="dropdown-menu text-center" aria-labelledby="dropd">
+                                        <li><a runat="server" href="Account.aspx" class="dropdown-item">Profile Edit</a></li>
+                                        <li><a runat="server" href="Password.aspx" class="dropdown-item">Change Password</a></li>
+                                    </ul>
+                                </li>
+                              <li><a runat="server" class="myButton" style="line-height:4px" href="~/">Logout</a></li>
+                            </ul>
+                            <%-- With Session End --%>
                         </div>
+                    </div>
                 </div>
         <%-- Navbar End --%>
+
               <%-- Main Body Begin --%>
               <div class="row">
+
+                  <%-- Search Sidebar Begin --%>
                   <div class="col-auto col-md-4 col-sm-4">
+
                         <div class="navbar-header">
                             <button type="button" style="background-color:red;" class="navbar-toggle" data-toggle="collapse" data-target="#search">
-                                        <span class="icon-search"></span>Search
+                                <span class="icon-search"></span>Search
                             </button>
                         </div>
+
                      <%-- Sidebar Begin --%>
                     <div class="sidebar" id="search">
                         <h3 class="text-center">Search for cars</h3>
                         <br />
+                        
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="form-group">
                                 <label class="control-label float-left">Car Type: </label>
@@ -108,6 +132,7 @@
                                 </select>
                             </div>
                         </div>
+
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="form-group">
                                 <label class="control-label float-left">Car Brand: </label>
@@ -117,6 +142,7 @@
                                 </select>
                             </div>
                         </div>
+
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="form-group">
                                 <label class="control-label float-left">Car Model: </label>
@@ -126,22 +152,28 @@
                                 </select>
                             </div>
                         </div>
+
                         <div class="text-center">
-                        <button class="btn btn-secondary" style="background-color:#9d9d9d;" type="submit">Search</button>
+                            <button class="btn btn-secondary" style="background-color:#9d9d9d;" type="submit">Search</button>
                         </div>
+
                     </div>
             <%-- Sidebar End --%>
+
                 </div>
+
                 <div class="col-auto col-md-8 col-sm-8" >
                     <asp:ContentPlaceHolder ID="MainContent" runat="server">
                     </asp:ContentPlaceHolder>
                 </div>
                   <%-- Main Body End --%>
               </div>
-                <hr />
-                <footer class="text-center">
-                    <p>&copy; <%: DateTime.Now.Year %> - For Eiyo Autos Ltd.</p>
-                </footer>
+
+            <hr />
+            <footer class="text-center">
+                <p>&copy; <%: DateTime.Now.Year %> - For Eiyo Autos Ltd.</p>
+            </footer>
+
         </div>
     </form>
 </body>
