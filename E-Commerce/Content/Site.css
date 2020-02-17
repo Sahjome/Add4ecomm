@@ -1,6 +1,9 @@
 ﻿/* Move down content because we have a fixed navbar that is 50px tall */
 body {
-    padding-top: 50px;
+    background-color: #f3f1f1;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
     padding-bottom: 20px;
 }
 
@@ -9,6 +12,7 @@ body {
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    /*margin-left: 239px;*/
 }
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
@@ -18,6 +22,76 @@ textarea {
     max-width: 280px;
 }
 
+/*fixed navbar
+.sticky-offset {
+    top: 36px;
+    position: sticky;
+}
+*/
+/*sets the fixed sidebar for the search*/
+.sidebar {
+    height: 500px;
+    /*width: 249px;*/
+    z-index: 1;
+    position: fixed;
+    overflow-x: hidden;
+    padding: 20px 10px 10px;
+    background-color: #e1dcdc;
+}
+
+.content{
+    margin-left: 249px;
+    padding: 0px 0px 0px 30px;
+}
+
+/* Make the image fully responsive */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Personal button decoration*/
+.myButton {
+    box-shadow: 0px 0px 5px 0px #f0f7fa;
+    /*background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);*/
+    background-color: #c6c3c3;
+    border-radius: 6px;
+    border: 1px solid #057fd0;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    text-align: center;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    height: 10px;
+    width: auto;
+    line-height: 10px;
+    margin-left: 17px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #5b6178;
+}
+
+    .myButton:hover {
+        background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+        background-color: #019ad2;
+    }
+
+    .myButton:active {
+        position: relative;
+        top: 1px;
+    }
+
+
+@media scren and (max-height:1110px){
+    .sidebar {
+        padding-top: 10px;
+        position: sticky;
+        width: 250px;
+    }
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -28,4 +102,23 @@ textarea {
     .body-content {
         padding: 0;
     }
+
+    .sidebar {
+        padding-top: 10px;
+        width: 370px;
+    }
 }
+
+/* Responsive: mobile phone screens*/
+@media screen and (max-width:450px){
+    .sidebar{
+        padding-top: 10px;
+        position: sticky;
+    }
+
+    .sticky-offset{
+        top: 0px;
+        position: static;
+    }
+}
+

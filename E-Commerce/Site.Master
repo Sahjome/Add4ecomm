@@ -6,14 +6,36 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> - Rental|Sale</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
+        <%: Scripts.Render("~/bundles/bootstrap") %>
     </asp:PlaceHolder>
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <style type="text/css">
+        .sectioner{
+            padding-top:38px;
+            margin: 0px 30px 30px 20px;
+        }
+        .topper{
+            background-color:inherit;
+            color: #9d9d9d;
+            text-anchor:middle;
+        }
+       
+        .auto-style1 {
+            float: left;
+            height: 50px;
+            padding: 15px 15px;
+            font-size: 29px;
+            line-height: 10px;
+            width: 173px;
+        }
+    </style>
 
 </head>
 <body>
@@ -37,35 +59,95 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+          <div class="container body-content">
+              <%-- Navbar Begin --%>
+                <div class="navbar navbar-inverse">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12" style="color:#9d9d9d; padding-left:30px; padding-top:10px;">Shopping</div>
+                            <div class="col-lg-6 col-sm-12" style="color:#9d9d9d; padding-right:30px; padding-top:10px; text-align:end;">Phone: +44 718945</div>
+                         </div>
+                        <hr />
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="auto-style1" runat="server" href="~/">Eiyo Autos</a>
+                        </div>
+                         
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navline">
+                                <li><a runat="server" style="line-height:4px" href="~/">Home</a></li>
+                                <li><a runat="server" style="line-height:4px" href="~/About">About</a></li>
+                                <li><a runat="server" style="line-height:4px" href="~/Contact">Contact</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                              <li><a runat="server" class="myButton" style="line-height:4px" href="#">Login</a></li>
+                              <li><a runat="server" class="myButton" style="line-height:4px" href="#">Register</a></li>
+                            </ul>
+                          </div>
+                        </div>
                 </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
+        <%-- Navbar End --%>
+              <%-- Main Body Begin --%>
+              <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="navbar-header">
+                            <button type="button" style="background-color:red;" class="navbar-toggle" data-toggle="collapse" data-target="#search">
+                                        <span class="icon-search"></span>Search
+                            </button>
+                        </div>
+                     <%-- Sidebar Begin --%>
+        <div class="sidebar" id="search">
+            <h3><center>Search for cars</center></h3>
+            <br />
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="form-group">
+                    <label class="control-label float-left">Car Type: </label>
+                    <select name="carType" class="form-control" required>
+                        <option disabled selected value="">---Select---</option>
+                        <%-- loop through car types --%>
+                        <option>Announcement</option>
+                    </select>
                 </div>
             </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="form-group">
+                    <label class="control-label float-left">Car Brand: </label>
+                    <select class="form-control" name="carBrand" required>
+                        <option disabled selected value="">--Select--</option>
+                        <%-- loop through the car brands in the db --%>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="form-group">
+                    <label class="control-label float-left">Car Model: </label>
+                    <select class="form-control" name="carModel" required>
+                        <option disabled selected value="">--Select--</option>
+                        <%-- loop through the car brands in the db --%>
+                    </select>
+                </div>
+            </div>
+            <div class="text-center">
+            <button class="btn btn-secondary" style="background-color:#9d9d9d;" type="submit">Search</button>
+            </div>
         </div>
-        <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
+            <%-- Sidebar End --%>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8" >
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                  <%-- Main Body End --%>
+              </div>
+                <hr />
+                <footer class="text-center">
+                    <p>&copy; <%: DateTime.Now.Year %> - For Eiyo Autos Ltd.</p>
+                </footer>
         </div>
-
     </form>
 </body>
 </html>

@@ -11,7 +11,11 @@ namespace E_Commerce
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Session["joe"] = "hello";
+            string variab = Session["joe"].ToString();
 
+            Session.Add("joe", variab);
         }
+
     }
 }
