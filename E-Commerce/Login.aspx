@@ -11,24 +11,24 @@
     
             <div class="aspform form-group">
                 <asp:Label ID="Label1" runat="server" CssClass="control-label" Text="Username/Email:"></asp:Label>
-                <asp:TextBox ID="email" runat="server" CssClass="form-control" TextMode="Email"></asp:TextBox>
+                <asp:TextBox ID="email" runat="server" CssClass="form-control" TabIndex="1" TextMode="Email"></asp:TextBox>
             </div>
         
             <div class="aspform form-group">
                 <asp:Label ID="Label2" runat="server" CssClass="control-label" Text="Password:"></asp:Label>
-                <asp:TextBox ID="password" runat="server" CssClass="form-control"  TextMode="Password" TabIndex="1"></asp:TextBox>
+                <asp:TextBox ID="password" runat="server" CssClass="form-control"  TextMode="Password" TabIndex="2"></asp:TextBox>
              </div>
         
             <div class="mb-3 text-center">
-                <asp:Button ID="LoginBtn" runat="server" CssClass="btn btn-secondary" style="background-color:#9d9d9d;" Text="Login" TabIndex="2" />
+                <asp:Button ID="LoginBtn" runat="server" CssClass="btn btn-secondary" style="background-color:#9d9d9d;" Text="Login" TabIndex="3" />
             </div>
     
         </div>
 
         <div class="sectioner" tabindex="4">
             <div class="aspinline form-inline">
-                <p>Don't have an account? <a href="Register.aspx" runat="server" tabindex="3">Sign up</a></p>
-                <p><a href="Forgot.aspx" runat="server" style="text-decoration: underline">Forgot Password?</a></p>
+                <p>Don't have an account? <a href="Register.aspx" runat="server" tabindex="4">Sign up</a></p>
+                <p><a href="Forgot.aspx" runat="server" style="text-decoration: underline" TabIndex="5">Forgot Password?</a></p>
             </div>
         </div>
     </div>

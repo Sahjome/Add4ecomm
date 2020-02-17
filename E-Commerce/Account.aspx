@@ -13,12 +13,12 @@
                 <div class="form-inline">
                     <div class="aspinline form-group">
                         <asp:Label ID="Label1" runat="server" CssClass="control-label" Text="First Name:"></asp:Label>
-                        <asp:TextBox ID="firstname" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:TextBox ID="firstname" runat="server" TabIndex="1" CssClass="form-control"></asp:TextBox>
                     </div>
 
                     <div class="aspinline form-group">
                         <asp:Label ID="Label2" runat="server" CssClass="control-label" Text="Last Name:"></asp:Label>
-                        <asp:TextBox ID="lastname" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:TextBox ID="lastname" runat="server" TabIndex="2" CssClass="form-control"></asp:TextBox>
                     </div>
                 </div>
             </div>
@@ -27,12 +27,12 @@
                  <span class="control-label">Gender:</span>
                 <div class="form-inline">
                     <div class="aspinline form-group">
-                        <asp:RadioButton CssClass="custom-control" ID="male" runat="server" GroupName="gender" />
+                        <asp:RadioButton CssClass="custom-control" ID="male" TabIndex="3" runat="server" GroupName="gender" />
                         <asp:Label ID="Label5" runat="server" CssClass="control-label" Text="Male"></asp:Label>
                     </div>
 
                     <div class="aspinline form-group">
-                        <asp:RadioButton CssClass="custom-control" ID="female" runat="server" GroupName="gender" />
+                        <asp:RadioButton CssClass="custom-control" ID="female" TabIndex="4" runat="server" GroupName="gender" />
                         <asp:Label ID="Label6" runat="server" CssClass="control-label" Text="Female"></asp:Label>
                     </div>
                 </div>
@@ -45,15 +45,15 @@
 
             <div class="aspform form-group">
                 <asp:Label ID="Label7" runat="server" CssClass="control-label" Text="Phone number:"></asp:Label>
-                <asp:TextBox ID="phone" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
+                <asp:TextBox ID="phone" runat="server" CssClass="form-control" TabIndex="5" TextMode="Number"></asp:TextBox>
             </div>
             <div class="aspform form-group">
                 <asp:Label ID="Label4" runat="server" CssClass="control-label" Text="Location:"></asp:Label>
-                <asp:TextBox ID="location" runat="server" CssClass="form-control"></asp:TextBox>
+                <asp:TextBox ID="location" runat="server" CssClass="form-control" TabIndex="6"></asp:TextBox>
             </div>
 
              <div class="mb-3 text-center">
-                <asp:Button ID="UpdateBtn" runat="server" CssClass="btn btn-secondary" style="background-color:#9d9d9d;" Text="Submit" />
+                <asp:Button ID="UpdateBtn" runat="server" CssClass="btn btn-secondary" TabIndex="7" style="background-color:#9d9d9d;" Text="Submit" />
             </div>
 
         </div>

@@ -14,18 +14,18 @@
             <h3 class="text-center">CONTACT FORM</h3>
                     <div class="aspform form-group">
                         <asp:Label ID="Label1" runat="server" Text="Name:" CssClass="control-label"></asp:Label>
-                        <asp:TextBox ID="name" CssClass="form-control" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="name" CssClass="form-control" runat="server" TabIndex="1"></asp:TextBox>
                     </div>
                     <div class="aspform form-group">
                         <asp:Label ID="Label2" runat="server" Text="Email:" CssClass="control-label"></asp:Label>
-                        <asp:TextBox ID="email" CssClass="form-control" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="email" CssClass="form-control" runat="server" TabIndex="2"></asp:TextBox>
                     </div>
                     <div class="aspform form-group">
                         <asp:Label ID="Label3" runat="server" Text="Message:" CssClass="control-label"></asp:Label>
-                        <asp:TextBox ID="message" cols="2" CssClass="form-control" runat="server" Height="105px" Rows="6" MaxLength="50" TextMode="MultiLine"></asp:TextBox>
+                        <asp:TextBox ID="message" cols="2" CssClass="form-control" runat="server" TabIndex="3" Height="105px" Rows="6" MaxLength="50" TextMode="MultiLine"></asp:TextBox>
                     </div>
                     <div class="text-center mb-3">
-                        <asp:Button ID="contactBtn" CssClass="btn btn-secondary"  style="background-color:#9d9d9d;" runat="server" Text="Send" />
+                        <asp:Button ID="contactBtn" CssClass="btn btn-secondary style="background-color:#9d9d9d;" TabIndex="4" runat="server" Text="Send" />
                     </div>
                 </div>
         <div>
@@ -37,8 +37,8 @@
             </address>
 
             <address>
-                <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-                <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+                <strong>Support:</strong>   <a href="mailto:Support@example.com" TabIndex="5">Support@example.com</a><br />
+                <strong>Marketing:</strong> <a href="mailto:Marketing@example.com" TabIndex="6">Marketing@example.com</a>
             </address>
         </div>
        
