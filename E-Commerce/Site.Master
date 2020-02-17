@@ -79,8 +79,8 @@
                                 <li><a runat="server" style="line-height:4px" href="~/Contact">Contact</a></li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
-                              <li><a runat="server" class="myButton" style="line-height:4px" href="#">Login</a></li>
-                              <li><a runat="server" class="myButton" style="line-height:4px" href="#">Register</a></li>
+                              <li><a runat="server" class="myButton" style="line-height:4px" href="~/Login">Login</a></li>
+                              <li><a runat="server" class="myButton" style="line-height:4px" href="~/Register">Register</a></li>
                             </ul>
                           </div>
                         </div>

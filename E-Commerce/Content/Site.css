@@ -114,6 +114,10 @@ textarea {
         padding-right: 100px;
     }
 
+    .aspinline{
+        margin-left:20px;
+    }
+
     .sidebar {
         padding-top: 10px;
         width: 370px;

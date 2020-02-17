@@ -3,8 +3,9 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
 <div class="sectioner">
+   <h3 class="text-center">Login</h3>
     <div class="well">
-   <h23 class="text-center">Login</h23>
+        <h3 class="text-center">Login Form</h3>
         <div class="aspform form-group">
             <asp:Label ID="Label1" runat="server" CssClass="control-label" Text="Username/Email:"></asp:Label>
             <asp:TextBox ID="email" runat="server" CssClass="form-control" TextMode="Email"></asp:TextBox>
@@ -15,6 +16,12 @@
          </div>
         <div class="mb-3 text-center">
             <asp:Button ID="LoginBtn" runat="server" CssClass="btn btn-secondary" style="background-color:#9d9d9d;" Text="Login" />
+        </div>
+    </div>
+
+    <div class="sectioner">
+        <div>
+            <p>Don't have an account? <a href="Register.aspx" runat="server">Sign up</a></p>
         </div>
     </div>
 </div>
