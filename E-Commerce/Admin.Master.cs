@@ -7,12 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace E_Commerce
 {
-    public partial class _Default : Page
+    public partial class Admin : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            price.Text = "$123.40";
-            mileage.Text = "23445518 KM";
+
         }
     }
 }
