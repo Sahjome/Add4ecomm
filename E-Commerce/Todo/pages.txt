@@ -5,16 +5,16 @@ External Pages
 3. Login ~
 4. Settings
 5. Account-edit profile ~
-6. Shopping + ratings
+6. Shopping + ratings ~
 7. Checkout
 8. Cart
 9. Sitemap
 10. Survey ~
 11. Product info + review
-12. Search result
+12. Search result ~
 
 Admin Pages
-1. Dashboard with charts of renatals and sales 
+1. Dashboard with charts of rentals and sales 
 2. Reports on products and customers page
 3. Survey statistics
 4. products management

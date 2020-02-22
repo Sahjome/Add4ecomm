@@ -87,7 +87,7 @@
 </section>--%>
     <div class="sectioner">
         <div>
-            <h2 class="text-uppercase" style="margin:5px 80px 25px 0px; border-bottom:2px solid #444; font-size:15px">Our services</h2>
+            <h2 class="text-uppercase" style="margin:5px 80px 10px 0px; border-bottom:2px solid #444; font-size:15px">Our services</h2>
             <br />
         </div>
         
@@ -104,11 +104,15 @@
                     </div>
                 </div>
             </div>
-               
         </div>
         
         
-        <div style="margin:initial">
+        <div style="margin:initial; font-family:Arial">
+            <p>
+                I was shootijng for stars on a saturday night so what goes up must come down so don't let me fall
+                don't let me fall don't let me fall. I was shootijng for stars on a saturday night so what goes up must come down so don't let me fall
+                don't let me fall don't let me fall.
+            </p>
             <p>
                 LOREM IPSUM DOLOR SIT AMET CONSE CTETUR ADIPI SICING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE 
                 MAGNA ALIQUA. UT ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCI TATION ULLAMCO LABORIS NISI UT ALIQUIP EX EA COMMODO 

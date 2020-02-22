@@ -42,12 +42,7 @@ textarea {
     justify-items:center;
     margin-bottom:10px;
 }
-.cimg{
-    border-radius:50%;
-    width: 70px;
-    height: 70px;
-    justify-self:inherit;
-}
+
 
 /**subtitute container class*/
 .sectioner {
@@ -66,10 +61,6 @@ textarea {
     background-color: #e1dcdc;
 }
 
-.content{
-    margin-left: 249px;
-    padding: 0px 0px 0px 30px;
-}
 
 /* Make the image fully responsive */
 .carousel-inner img {
@@ -134,56 +125,31 @@ textarea {
     margin-top: auto;
 }
 .product-card {
-    padding: 2%;
     flex: 1 16%;
-    display: flex; /* so child elements can use flexbox stuff too! */
+   padding: 2%;
+    /*display: flex;  so child elements can use flexbox stuff too! */
 }
 .product-image img {
     max-width: 100%;
 }
-/*listing for garage*/
-.grid_8 {
-    float: left;
-    display: inline;
-    margin-left: 10px;
-    margin-right: 10px;
+
+/*product page header*/
+.collection-sort {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
 }
-.inner-block {
-    background: 0 0;
-    border: 0;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    vertical-align: top;
-    overflow: hidden;
+.sort {
+    display: flex;
 }
-.h2-border {
-    background: url(../images/h2-border.png) 0 bottom repeat-x;
-    padding-bottom: 7px;
-    display: block;
-    overflow: hidden;
+.product-filter h2 {
+    flex-grow: 1;
 }
-.h2-border .link {
-    float: right;
-    margin-top: 3px;
+.product-filter {
+    display: flex;
+    margin-bottom: 20px;
 }
-a.link {
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 10px;
-    line-height: 16px;
-    color: #434242;
-    display: inline-block;
-}
-.box_1{
-    margin: 11px 0 14px;
-}
-.price_1 {
-    font-size: 22px;
-    line-height: 28px;
-    color: #696969;
-}
+
     /* Personal button decoration*/
 .myButton {
     box-shadow: 0px 0px 5px 0px #f0f7fa;
@@ -208,12 +174,12 @@ a.link {
     text-shadow: 0px -1px 0px #5b6178;
 }
 
-    .myButton:hover {
-        background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
-        background-color: #019ad2;
-    }
+.myButton:hover {
+    background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+    background-color: #019ad2;
+}
 
-    .myButton:active {
+.myButton:active {
         position: relative;
         top: 1px;
     }
