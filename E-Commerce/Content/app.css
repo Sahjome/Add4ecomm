@@ -34,13 +34,13 @@ textarea {
     border-radius: 70px;
     width: 100px;
     height: 100px;
-    padding:20px;
+    padding: 20px;
     background-color: white;
     box-shadow: 2px 10px rgba(0,0,0,0.6);
     -moz-box-shadow: 2px 10px rgba(0,0,0,0.6);
     -webkit-box-shadow: 2px 10px rgba(0,0,0,0.6);
-    justify-items:center;
-    margin-bottom:10px;
+    justify-items: center;
+    margin-bottom: 10px;
 }
 
 
@@ -77,6 +77,7 @@ textarea {
     background-color: transparent;
     color: #444;
 }
+
 .box {
     background-color: transparent;
     color: #fff;
@@ -91,7 +92,7 @@ textarea {
     max-width: 300px;
     text-align: center;
     font-family: arial;
-    margin:20px;
+    margin: 20px;
 }
 
 .price {
@@ -111,11 +112,11 @@ textarea {
     font-size: 18px;
 }
 
-.card button:hover {
-    opacity: 0.7;
-}
+    .card button:hover {
+        opacity: 0.7;
+    }
 
-.list-head{
+.list-head {
     background: green;
     width: 100px;
     color: white;
@@ -127,14 +128,17 @@ textarea {
     display: flex;
     flex-wrap: wrap;
 }
+
 .product-info {
     margin-top: auto;
 }
+
 .product-card {
     flex: 1 16%;
-   padding: 2%;
+    padding: 2%;
     /*display: flex;  so child elements can use flexbox stuff too! */
 }
+
 .product-image img {
     max-width: 100%;
 }
@@ -145,18 +149,21 @@ textarea {
     flex-direction: column;
     padding: 2%;
 }
+
 .sort {
     display: flex;
 }
+
 .product-filter h2 {
     flex-grow: 1;
 }
+
 .product-filter {
     display: flex;
     margin-bottom: 20px;
 }
 
-    /* Personal button decoration*/
+/* Personal button decoration*/
 .myButton {
     box-shadow: 0px 0px 5px 0px #f0f7fa;
     /*background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);*/
@@ -180,18 +187,18 @@ textarea {
     text-shadow: 0px -1px 0px #5b6178;
 }
 
-.myButton:hover {
-    background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
-    background-color: #019ad2;
-}
+    .myButton:hover {
+        background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+        background-color: #019ad2;
+    }
 
-.myButton:active {
+    .myButton:active {
         position: relative;
         top: 1px;
     }
 
 
-@media scren and (max-height:1110px){
+@media scren and (max-height:1110px) {
     .sidebar {
         padding-top: 10px;
         position: sticky;
@@ -208,13 +215,14 @@ textarea {
     .body-content {
         padding: 0;
     }
+
     .aspform {
         padding-left: 120px;
         padding-right: 100px;
     }
 
-    .aspinline{
-        margin-left:20px;
+    .aspinline {
+        margin-left: 20px;
     }
 
     .sidebar {
@@ -222,7 +230,7 @@ textarea {
         width: 370px;
     }
 
-    #right{
+    #right {
         margin-left: 150px;
     }
 
@@ -230,14 +238,14 @@ textarea {
         margin-right: 100px;
     }
 
-    #right, #left :hover{
-        opacity: 0.7;
-    }
+        #right, #left :hover {
+            opacity: 0.7;
+        }
 }
 
 /* Responsive: mobile phone screens*/
-@media screen and (max-width:450px){
-    .sidebar{
+@media screen and (max-width:450px) {
+    .sidebar {
         padding-top: 10px;
         position: sticky;
     }
@@ -246,7 +254,7 @@ textarea {
         padding: 10px;
     }
 
-    .sticky-offset{
+    .sticky-offset {
         top: 0px;
         position: static;
     }
@@ -255,4 +263,3 @@ textarea {
         flex: 1 46%;
     }
 }
-

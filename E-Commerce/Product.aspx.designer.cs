@@ -11,7 +11,7 @@ namespace E_Commerce
 {
 
 
-    public partial class Shop
+    public partial class Product
     {
     }
 }

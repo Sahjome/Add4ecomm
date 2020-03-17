@@ -1,0 +1,27 @@
+brand-toyota
+model-camry
+year- 2013 to 2016
+type-salon
+
+
+manner- up = asc; down = desc
+price- between min and max
+year- between min and max
+
+
+
+1. default is show all, sort by model alphabetically 
+2. search by brand
+3. search by type
+4. search  by model
+5. price
+6. year
+
+controllers
+1. show all products
+2. seaarch for products
+3. crud member
+4. car operatioins
+5. 
+
+gps to track vehicles in order to monitor their agreed location
